@@ -1,0 +1,1165 @@
+/* ================================
+   BASIC RESET
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+    color: #102a56;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: min(1120px, 92%);
+    margin: auto;
+}
+
+
+/* ================================
+   HEADER
+================================ */
+
+.header {
+    background: white;
+    border-bottom: 1px solid #eeeeee;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    min-height: 78px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+/* ================================
+   SANJAY HARDWARE LOGO
+================================ */
+
+/* Real Logo */
+.logo img {
+    height: 60px;
+    width: auto;
+    display: block;
+    object-fit: contain;
+}
+
+.logo-mark {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #102a56;
+    border-radius: 10px;
+
+    font-size: 17px;
+    font-weight: 900;
+    letter-spacing: -4px;
+
+    color: white;
+
+    box-shadow: 0 5px 15px rgba(16, 42, 86, 0.15);
+}
+
+.logo-mark span:last-child {
+    color: #f47721;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-main {
+    font-size: 23px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: #102a56;
+}
+
+.logo-sub {
+    margin-top: 5px;
+
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 3px;
+
+    color: #f47721;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f47721;
+}
+
+.nav-button {
+    background: #f47721;
+    color: white;
+
+    padding: 12px 22px;
+
+    border-radius: 7px;
+
+    font-weight: bold;
+
+    box-shadow: 0 5px 15px rgba(244, 119, 33, 0.2);
+
+    transition: 0.3s;
+}
+
+.nav-button:hover {
+    transform: translateY(-2px);
+    background: #df6415;
+    box-shadow: 0 8px 20px rgba(244, 119, 33, 0.3);
+}
+
+
+/* ================================
+   HERO
+================================ */
+
+.hero {
+    background:
+        linear-gradient(135deg, #f5f8fc, #ffffff);
+
+    min-height: 650px;
+
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 70px;
+    align-items: center;
+    padding: 80px 0;
+}
+
+.badge {
+    display: inline-block;
+    background: #fff0e6;
+    color: #f47721;
+    padding: 8px 15px;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: clamp(45px, 6vw, 72px);
+    line-height: 1.05;
+    margin-bottom: 25px;
+    letter-spacing: -2px;
+}
+
+.hero h1 span {
+    display: block;
+    color: #f47721;
+}
+
+.hero-text > p {
+    max-width: 570px;
+    color: #5e6d80;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.primary-button,
+.secondary-button {
+    display: inline-block;
+    padding: 14px 24px;
+    border-radius: 7px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.primary-button {
+    background: #102a56;
+    color: white;
+}
+
+.primary-button:hover {
+    transform: translateY(-2px);
+}
+
+.secondary-button {
+    border: 2px solid #102a56;
+    color: #102a56;
+}
+
+.secondary-button:hover {
+    background: #102a56;
+    color: white;
+}
+
+.hero-info {
+    display: flex;
+    gap: 35px;
+    margin-top: 45px;
+    flex-wrap: wrap;
+}
+
+.hero-info div {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-info strong {
+    font-size: 17px;
+}
+
+.hero-info small {
+    color: #778397;
+}
+
+
+/* ================================
+   HERO CARD
+================================ */
+
+.hero-card {
+    background: #102a56;
+    color: white;
+    border-radius: 25px;
+    padding: 45px;
+
+    min-height: 470px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    box-shadow: 0 25px 60px rgba(16, 42, 86, 0.18);
+}
+
+.paint-circle {
+    width: 90px;
+    height: 90px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #f47721;
+
+    border-radius: 50%;
+
+    font-size: 28px;
+    font-weight: 900;
+
+    letter-spacing: -2px;
+
+    margin-bottom: 25px;
+
+    box-shadow: 0 10px 25px rgba(244, 119, 33, 0.3);
+}
+
+.paint-circle span {
+    color: white;
+}
+
+.card-small {
+    color: #f47721;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero-card h2 {
+    font-size: 38px;
+    line-height: 1.1;
+    margin: 10px 0 15px;
+}
+
+.hero-card > p {
+    color: #d8e0eb;
+}
+
+.brand-box {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 13px 15px;
+    margin-top: 15px;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.brand-box span {
+    color: #c5cfdd;
+    font-size: 13px;
+}
+
+
+/* ================================
+   SECTION HEADING
+================================ */
+
+.section-heading {
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto 55px;
+}
+
+.section-heading > span,
+.about-box > span,
+.contact-content > div > span {
+    color: #f47721;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.section-heading h2 {
+    font-size: 42px;
+    margin: 10px 0;
+}
+
+.section-heading p {
+    color: #6d7888;
+}
+
+
+/* ================================
+   CATEGORIES
+================================ */
+
+.categories {
+    padding: 100px 0;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.category-card {
+    padding: 30px;
+    border: 1px solid #e8ecf2;
+    border-radius: 14px;
+    transition: 0.3s;
+}
+
+.category-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 40px rgba(16, 42, 86, 0.08);
+}
+
+.category-icon {
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+.category-card h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.category-card p {
+    color: #707b8c;
+}
+
+
+/* ================================
+   BRANDS
+================================ */
+
+.brands {
+    padding: 90px 0;
+    background: #f7f9fc;
+}
+
+.brand-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.large-brand {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    border: 1px solid #e9edf3;
+}
+
+.brand-symbol {
+    width: 70px;
+    height: 70px;
+
+    border-radius: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.berger {
+    background: #173b70;
+}
+
+.nippon {
+    background: #e7472e;
+}
+
+.large-brand h3 {
+    font-size: 23px;
+}
+
+.large-brand p {
+    color: #758093;
+}
+
+
+/* ================================
+   ABOUT
+================================ */
+
+.about {
+    padding: 100px 0;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.about-box h2 {
+    font-size: 43px;
+    line-height: 1.15;
+    margin: 12px 0 20px;
+}
+
+.about-box p {
+    color: #687487;
+    margin-bottom: 15px;
+}
+
+.about-box .primary-button {
+    margin-top: 15px;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.feature {
+    display: flex;
+    gap: 20px;
+    padding: 25px;
+    border-radius: 12px;
+    background: #f7f9fc;
+}
+
+.feature > span {
+    color: #f47721;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.feature h3 {
+    margin-bottom: 5px;
+}
+
+.feature p {
+    color: #748093;
+}
+
+
+/* ================================
+   CONTACT
+================================ */
+
+.contact {
+    padding: 80px 0 30px;
+    background: #102a56;
+    color: white;
+}
+
+.contact-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding-bottom: 50px;
+}
+
+.contact-content h2 {
+    font-size: 42px;
+    margin: 10px 0;
+}
+
+.contact-content p {
+    color: #ccd6e4;
+}
+
+.contact-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.whatsapp-button,
+.call-button {
+    padding: 15px 22px;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+.whatsapp-button {
+    background: #20c76a;
+    color: white;
+}
+
+.call-button {
+    background: white;
+    color: #102a56;
+}
+
+.location-box {
+    max-width: 1120px;
+    width: 92%;
+    margin: auto;
+
+    border-top: 1px solid rgba(255,255,255,0.15);
+
+    padding: 30px 0;
+}
+
+.location-box h3 {
+    margin-bottom: 5px;
+}
+
+.location-box p {
+    color: #cbd5e3;
+}
+
+
+/* ================================
+   FOOTER
+================================ */
+
+footer {
+    background: #091d3b;
+    color: white;
+}
+
+.footer-content {
+    min-height: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-content strong {
+    letter-spacing: 1px;
+}
+
+.footer-content p {
+    color: #aeb9c9;
+    font-size: 13px;
+}
+
+/* Product Card Improvements */
+
+.product-card {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #f58220, #ffb347);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.product-card:hover::before {
+    transform: scaleX(1);
+}
+
+.product-icon {
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-icon {
+    transform: scale(1.12) rotate(3deg);
+}
+
+.product-whatsapp {
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.product-whatsapp:hover {
+    transform: translateY(-2px);
+}
+
+/* Location Button */
+
+.location-button {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 12px 20px;
+    background: #f58220;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+.location-button:hover {
+    background: #d9650d;
+    transform: translateY(-2px);
+}
+
+   /* ================================
+   PRODUCTS
+================================ */
+
+.products {
+    padding: 100px 0;
+    background: #ffffff;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.product-card {
+    border: 1px solid #e7ebf1;
+    border-radius: 15px;
+    overflow: hidden;
+    background: white;
+
+    transition: 0.3s;
+
+    box-shadow: 0 5px 20px rgba(16, 42, 86, 0.03);
+}
+
+.product-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 18px 40px rgba(16, 42, 86, 0.10);
+}
+
+.product-icon {
+    height: 145px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #f5f8fc;
+
+    font-size: 52px;
+}
+
+.product-content {
+    padding: 22px;
+}
+
+.product-brand {
+    color: #f47721;
+
+    font-size: 10px;
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+}
+
+.product-content h3 {
+    color: #102a56;
+
+    font-size: 20px;
+
+    margin: 7px 0 8px;
+}
+
+.product-content p {
+    color: #6f7b8c;
+
+    font-size: 14px;
+
+    min-height: 66px;
+
+    margin-bottom: 18px;
+}
+
+.product-whatsapp {
+    width: 100%;
+
+    border: none;
+
+    padding: 11px 15px;
+
+    border-radius: 6px;
+
+    background: #20c76a;
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.product-whatsapp:hover {
+    background: #18ad59;
+    transform: translateY(-1px);
+}
+
+/* Enquiry Form */
+
+.enquiry-box {
+    max-width: 650px;
+    margin: 50px auto 0;
+    padding: 35px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+}
+
+.enquiry-box h2 {
+    color: #102a43;
+    margin-bottom: 10px;
+}
+
+.enquiry-box p {
+    color: #627d98;
+    margin-bottom: 25px;
+}
+
+#enquiryForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#enquiryForm input,
+#enquiryForm textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #d9e2ec;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 15px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+#enquiryForm input:focus,
+#enquiryForm textarea:focus {
+    border-color: #f58220;
+}
+
+.enquiry-button {
+    padding: 14px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #f58220;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.enquiry-button:hover {
+    background: #d9650d;
+    transform: translateY(-2px);
+}
+
+/* Product Images */
+
+.product-image {
+    width: 100%;
+    height: 190px;
+    display: block;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+}
+
+.product-card {
+    overflow: hidden;
+}
+
+.product-card .product-content {
+    padding: 24px;
+}
+
+/* Smooth Page Scrolling */
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin-top: 90px;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.main-nav a {
+    color: #102a43;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+    color: #f58220;
+}
+
+/* Professional Footer */
+
+.site-footer {
+    background: #102a43;
+    color: white;
+    padding: 60px 8% 0;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1.5fr;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 45px;
+}
+
+.footer-logo {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f58220;
+    color: white;
+    border-radius: 10px;
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom: 18px;
+}
+
+.footer-brand h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.footer-brand p,
+.footer-contact p {
+    color: #bcccdc;
+    line-height: 1.8;
+    font-size: 14px;
+}
+
+.footer-links h4,
+.footer-contact h4 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-links a {
+    color: #bcccdc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #f58220;
+}
+
+.footer-contact p {
+    margin-bottom: 8px;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 22px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: #bcccdc;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* ================================
+   MOBILE RESPONSIVE
+================================ */
+
+@media (max-width: 850px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    .navbar {
+        min-height: 70px;
+    }
+
+    .hero-content,
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-content {
+        gap: 45px;
+    }
+
+    .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .brand-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}
+
+
+@media (max-width: 550px) {
+
+    .nav-button {
+        display: none;
+    }
+
+    .hero {
+        min-height: auto;
+    }
+
+    .hero-content {
+        padding: 60px 0;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .hero-card {
+        padding: 30px;
+        min-height: auto;
+    }
+
+    .hero-info {
+        gap: 20px;
+    }
+
+    .category-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-heading h2,
+    .about-box h2,
+    .contact-content h2 {
+        font-size: 34px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 25px 0;
+    }
+
+ 
+
+@media (max-width: 900px) {
+    .why-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .why-choose {
+        padding: 60px 5%;
+    }
+
+    .section-heading h2 {
+        font-size: 28px;
+    }
+
+    .why-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 900px) {
+    .why-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .why-choose {
+        padding: 60px 5%;
+    }
+
+    .section-heading h2 {
+        font-size: 28px;
+    }
+
+    .why-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Mobile WhatsApp Button */
+
+.mobile-whatsapp {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .mobile-whatsapp {
+        display: block;
+        position: fixed;
+        left: 15px;
+        right: 15px;
+        bottom: 15px;
+        z-index: 999;
+        padding: 15px;
+        background: #25d366;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 10px;
+        font-weight: 700;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    body {
+        padding-bottom: 75px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-nav {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .main-nav a {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        text-align: center;
+    }
+
+    .footer-logo {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer-links {
+        align-items: center;
+    }
+
+    .site-footer {
+        padding: 45px 6% 0;
+    }
+}
+
+}
